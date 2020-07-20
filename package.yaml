@@ -86,16 +86,6 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    - -XCPP
-    - -XRankNTypes
-    - -XMultiParamTypeClasses
-    - -XFlexibleInstances
-    - -XFlexibleContexts
-    - -XTypeSynonymInstances
-    - -XFlexibleContexts
-    - -XFunctionalDependencies
-    - -XUndecidableInstances
-    - -XNoMonomorphismRestriction
     dependencies:
     - mtl
     - haskeline
