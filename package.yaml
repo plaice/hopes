@@ -21,12 +21,9 @@ description:
   used as Programming Language.
 
 dependencies:
-- base >= 3 && < 4.11
+- base
 - array
 - pretty
-
-build-tools:
-- happy:happy
 
 when:
 - condition: os(windows)
@@ -100,7 +97,7 @@ executables:
     - -XUndecidableInstances
     - -XNoMonomorphismRestriction
     dependencies:
-    - mtl >= 2.2.1
+    - mtl
     - haskeline
     - monad-coroutine
 

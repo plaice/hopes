@@ -1,10 +1,10 @@
 cabal-version: 2.0
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2979a074d8bbf4fcd94939ae1bbc85ca62b79fec654d7e41dc76af83c5009bf0
+-- hash: 37fb59abd1003da3be9b664634877c418375d90ca4a16ac9748197f551ec49c7
 
 name:           hopes
 version:        0.0.5
@@ -78,14 +78,12 @@ executable hopes
       src/prover
       src/interpreter
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -XCPP -XRankNTypes -XMultiParamTypeClasses -XFlexibleInstances -XFlexibleContexts -XTypeSynonymInstances -XFlexibleContexts -XFunctionalDependencies -XUndecidableInstances -XNoMonomorphismRestriction
-  build-tools:
-      happy
   build-depends:
       array
-    , base >=3 && <4.11
+    , base
     , haskeline
     , monad-coroutine
-    , mtl >=2.2.1
+    , mtl
     , pretty
   if os(windows)
     cpp-options: -DBUILD_WINDOWS
@@ -105,11 +103,9 @@ test-suite hopes-test
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-tools:
-      happy
   build-depends:
       array
-    , base >=3 && <4.11
+    , base
     , pretty
   if os(windows)
     cpp-options: -DBUILD_WINDOWS
