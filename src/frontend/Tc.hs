@@ -143,8 +143,8 @@ freshTyFor v = do
     return (v, ty)
 
 withSig e m = do
-	ty_sym <- mapM freshTyFor (rigids e)
-	withTypeEnv ty_sym m
+        ty_sym <- mapM freshTyFor (rigids e)
+        withTypeEnv ty_sym m
 
 enterContext c m = local addctxt m
     where addctxt env = env{ctxt = c:(ctxt env)}
